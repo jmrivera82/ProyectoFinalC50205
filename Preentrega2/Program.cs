@@ -23,7 +23,7 @@ internal class Program
         Console.WriteLine("1.- Gestión de usuarios");
         Console.WriteLine("2.- Gestión de productos ");
         Console.WriteLine("3.- Gestión de productos vendidos");
-        Console.WriteLine("4.- Gestión 4 ");
+        Console.WriteLine("4.- Gestión de ventas ");
 
   
         Console.WriteLine("Por favor ingresar opcion: ");
@@ -407,7 +407,7 @@ internal class Program
                         try
                         {
 
-                            GestorVentas ventaObtenida = db.ObtenerVentas(Id: 1);
+                            Venta ventaObtenida = db.ObtenerVentas(Id: 1);
 
                             Console.WriteLine(ventaObtenida.ToString());
 
@@ -476,7 +476,7 @@ internal class Program
 
                         try
                         {
-                            Venta ventaAActualizar = new Venta(idProducto: 2, stock: 40, idVenta: 2);
+                            Venta ventaAActualizar = new Venta(comentarios: "detergentes", idUsuario: 1);
 
                             if (db3.ActualizarVentas(id: 1, ventaAActualizar))
                             {
