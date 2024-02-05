@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Preentrega2.modelo
 {
-    internal class Productos
+    public class Productos
     {
     }
 }
